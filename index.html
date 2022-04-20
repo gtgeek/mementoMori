@@ -16,7 +16,7 @@
         --dark-gray:#333333;
         --rect-gap: 10px;
         --week-gap: 2px;
-        --week-size: 2px;
+        --week-size: 5px;
     }
 
     @page {
@@ -34,6 +34,13 @@
         text-align: center;
         margin: 0px 0px 25px 0px;
         font-size: 50px;
+        font-weight: 700;
+    }
+    .subtitle {
+        color: var(--dark-gray);
+        text-align: center;
+        margin: 0px 0px 25px 0px;
+        font-size: 30px;
         font-weight: 700;
     }
 
@@ -67,26 +74,40 @@
     <div id="quote">
         <cite>
         “It is not that we have a short time to live, but that we waste a lot of it.
-
+<br/>
         Life is long enough, and a sufficiently generous amount has been given to us for the
         highest achievements if it were all well invested.
-        
+<br/>        
         But when it is wasted in heedless luxury and spent on no good activity,
         we are forced at last by death’s final constraint to realize that
         it has passed away before we knew it was passing.
+<br/>
         
         So it is: we are not given a short life but we make it short,
         and we are not ill-supplied but wasteful of it…
-        
+<br/>        
         Life is long if you know how to use it.” ~ Seneca
         </cite>
     </div>
+  
     <div class="title">
         MEMENTO MORI
     </div>
+  
     <!-- Will be filled by javascript later -->
     <div id="calendar"></div>
-
+  
+    <div class="subtitle">
+      <ol>
+        <li>Prepare for Negativity</li>
+        <li>Clarify your Intention</li>
+        <li>Make the most of the Moment</li>
+      </ol>
+    </div>
+  
+  
+  
+  
   <script>
         const rows_per_rect = get_css_variable('--rows-per-rect');
         const cols_per_rect = get_css_variable('--cols-per-rect');
