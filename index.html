@@ -15,8 +15,8 @@
 
         --dark-gray:#333333;
         --rect-gap: 10px;
-        --week-gap: 5px;
-        --week-size: 10px;
+        --week-gap: 2px;
+        --week-size: 2px;
     }
 
     @page {
@@ -46,7 +46,7 @@
         //width: 0px; /* make it fit its content. TODO: calculate it dynamically */
         display: grid;
         grid-gap: var(--rect-gap);
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(4, auto);
     }
 
     .rect-container {
@@ -93,7 +93,7 @@
         
         let calendar = document.getElementById("calendar");
 
-        const life_expectancy = 60;
+        const life_expectancy = 80;
         let numDecades = Math.floor(life_expectancy / 10);
         populate_calendar(numDecades);
 
